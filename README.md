@@ -8,4 +8,4 @@
 - The hyperparameters were set by experience where generally a 100 epoch would work for such a easy task. The batch size was chosen to be 512 and the learning rate was chosen to be 0.0001. Hopefully it was trained by Adam.
 - Before downloading the model, several simple tests were done, which showed that the model was not that accurate as it couldn't output one high probability while the other 3 probabilities stay low, indicating that the model is unsure.
 - The model was downloaded and could be further used easily. 
-![ModelTrain](image/Model%20Training.png)
+![ModelTrain](image/ModelTraining.png)
