@@ -41,16 +41,17 @@ class CountDownThread(Thread):
     def __init__(self, limit=limit):
         '''
             This class contains the following attribute:
-            (1) limit: int, the time to count down, unit: second
+            (1) limit: int, the time to countdown, unit: second
         '''
         Thread.__init__(self)
         self.limit=limit
 
     def run(self):
         '''
-            Display the count down to the user
+            Display the countdown to the user
         '''
         for i in range(self.limit, 0, -1):
+            print(" ")
             print(f"Please wait for {i} s!")
             time.sleep(1)
 

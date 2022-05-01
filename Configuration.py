@@ -5,6 +5,8 @@ introduction=[
     "Which level of the game would you like to try?",
     "a. Easy: your component will randomly pick the option.",
     "b. Hell: you will feel the power.",
+    " ",
+    "To feel the real power in the hell level, Please position yourself in the first 3 sconds and hold that during the countdown.",
     " "
 ]
 
@@ -17,7 +19,7 @@ labelPath="./labels.txt"
 #The level of the game
 level={"easy", "hell", "quit"}
 
-#The time limit to count down, unit: second
+#The time limit to countdown, unit: second
 limit=5
 
 #The path to the model h5 file
@@ -36,7 +38,17 @@ dimension=(224,224)
 normalization=True
 
 #The content to display to the user when asking for an input
-content="Please choose from scissors, rock, and paper: "
+optionContent="Please choose from scissors, rock, and paper: "
 
 #The content to display to the user when asking for the level of the game
 levelContent="Please choose from easy, hell and quit: "
+
+#The content to display to the user when winning the game
+winContent="Congratulations! You have won the game! Good job!"
+
+#The content to display to the user when losing the game
+loseContent="You have lost the game. Good luck next time."
+
+#The content to display to the user when asking whether the prediction is correct
+correctContent=["Did your component get the correct prediction?","Please choose from yes or no: "]
+

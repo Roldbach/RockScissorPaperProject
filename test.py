@@ -7,6 +7,7 @@ from NewThread import PredictionThread, CountDownThread
 from camera_rps import loadLabel
 from Configuration import modelPath
 
+'''
 label=loadLabel()
 model=load_model(modelPath)
 camera=cv2.VideoCapture(0)
@@ -25,3 +26,4 @@ print(f"The final time is: {end-start}")
 camera.release()
 # Destroy all the windows
 cv2.destroyAllWindows()
+'''

@@ -1,7 +1,7 @@
 import random
 import time
 
-from Configuration import option, content
+from Configuration import option, optionContent
 
 def play():
     '''
@@ -27,7 +27,7 @@ def get_computer_choice(option=option):
     '''
     return option[random.randrange(0, len(option))]
 
-def get_user_choice(content=content, option=set(option)):
+def get_user_choice(content=optionContent, option=set(option)):
     '''
         Ask the user to enter the choice until a valid
     input is obtained

@@ -94,7 +94,7 @@ def checkLabel(prediction, label):
 def analyseResult(path=resultPath):
     '''
         Load all results from the text file and
-    return the answer with the highest freqeucny
+    return the answer with the highest freqeucny in lowercase
 
     input:
         path: string, the path to the result text file
@@ -119,7 +119,7 @@ def analyseResult(path=resultPath):
                 result=key
                 max=value
         
-        return result
+        return result.lower()
     except:
         print("Can't load the result file. Please try again.")
 
