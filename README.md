@@ -9,7 +9,7 @@
 - The model was downloaded and could be further used easily. 
 ![Model Training](Image/ModelTraining.png)
 
-## MileStone 2
+## MileStone 3
 - I have constructed a function that could randomly generate a choice from all available options and ask the user to enter a valid input. Finally, those results could be used to determine who is the winner according to the rule of the game.
 - To randomly generate a result from all available options, I simply generate a random index which is within the range from 0 to the length of the list containing all options, which is shown as below:
 ```python
@@ -47,3 +47,10 @@
         print(winner)
 ```
 - I used lots of default arguments when defining a function so the user doesn't have to code a lot.
+
+## MileStone 4
+- The core idea of getting prediction is that a number of screenshots would be captured and all the corresponding labels would be saved in a separate text file. Another function could read these text file and return the label that appears the most frequently.
+- 2 different threads were started at the same time. One of them could capture a large number of screenshots and analyse them to get the final result and the other one could display the countdown. In this way they could run in parallel with higher efficiency. The detailed code could be found in NewThread.py.
+- To check whether the game is over, the NPC could record the current scores for both players and this could terminate the game when one of them has reached 3 scores first. This is implemented in the NPC class.
+- The NPC class is used for combining all together. Basically the user could choose from 2 game levels: easy and hell. Under the easy level, the NPC will randomly choose from all available options and it's a kind of fair game. Under the hell level, the NPC could response based on the prediction from screenshots so the user can't win this round for sure if the prediction is correct.
+- Finally, by the end of each round the user would be asked whether the prediction in this round is correct or not and the finally accuracy of the model could be displayed to the user based on this information. For more detail, please check the NPC class.
