@@ -54,3 +54,6 @@
 - To check whether the game is over, the NPC could record the current scores for both players and this could terminate the game when one of them has reached 3 scores first. This is implemented in the NPC class.
 - The NPC class is used for combining all together. Basically the user could choose from 2 game levels: easy and hell. Under the easy level, the NPC will randomly choose from all available options and it's a kind of fair game. Under the hell level, the NPC could response based on the prediction from screenshots so the user can't win this round for sure if the prediction is correct.
 - Finally, by the end of each round the user would be asked whether the prediction in this round is correct or not and the finally accuracy of the model could be displayed to the user based on this information. For more detail, please check the NPC class.
+
+## Additional Points
+- In order to get an accurate prediction, please follow the instructions displayed in the terminal during the game and make sure that your "choice" is big enough. (Please consider the image shown in the MileStone 1 section)
